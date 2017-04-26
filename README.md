@@ -6,3 +6,6 @@ A NPM Package to help developers setting up new projects from boilerplate
 ## Usage:
 1. Write your own boilerplate project and save it on github.
 2. Create new project from the boilerplate code.
+
+# HW4
+For HW4 please read CI.md
