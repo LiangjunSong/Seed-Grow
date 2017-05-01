@@ -6,8 +6,10 @@ var fs = require('fs');
 var dl = require('./dl');
 
 var username = '';
-if (fs.existsSync('./config.json')) {
-    username = require('./config').username;
+const configPath = process.env.HOME + '/.seedgrowconfig'
+
+if (fs.existsSync(configPath+'.json')) {
+    username = require(configPath).username;
 }
 
 program
@@ -18,7 +20,7 @@ program
   .parse(process.argv);
 
 if (program.init)
-    jsonfile.writeFile(`${__dirname}/config.json`, {'username':program.init})
+    jsonfile.writeFile(configPath+'.json', {'username':program.init})
 else if (program.list) 
     fetchRepos(username,(err,body)=>{
         var re = new RegExp('-seed$');

@@ -1,6 +1,6 @@
 var jsonfile = require('jsonfile');
 
-file = __dirname + '/config.json'
+file ='~/.seedgrowconfig.json'
 obj = {
   'username': 'liangjunsong'
 }
