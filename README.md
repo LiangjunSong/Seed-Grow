@@ -3,9 +3,21 @@
 # Seed-Grow
 A NPM Package to help developers setting up new projects from boilerplate
 
+## Installation:
+`sudo npm install -g seedgrow`
+
+## Features:
+1. Create your own boilerplate and save it on Github
+2. List available boilerplates on your Github
+3. Intialize new project from your bolierplate
+
 ## Usage:
-1. Write your own boilerplate project and save it on github.
-2. Create new project from the boilerplate code.
+### Initialize the software:
+`seedgrow -i {yourusername}`
+###
+
+
+
 
 # HW4
 For HW4 please read CI.md

@@ -33,6 +33,6 @@ else if (program.list)
 else{ 
     repo = program.args[0];
     dir = program.args[1];
-    fs.mkdirSync(`${__dirname}/${dir}`);
-    dl(username,repo,`${__dirname}/${dir}`);
+    fs.mkdirSync(`./${dir}`);
+    dl(username,repo,`./${dir}`);
 }
