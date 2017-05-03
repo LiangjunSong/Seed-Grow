@@ -13,8 +13,11 @@ A NPM Package to help developers setting up new projects from boilerplate
 
 ## Usage:
 ### Initialize the software:
-`seedgrow -i {yourusername}`
-###
+`seedgrow -i [yourusername]`
+### List available seeds:
+`seedgrow -l`
+### Create project
+`seedgrow [custom boilerplate] [project name]`
 
 
 
